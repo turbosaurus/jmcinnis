@@ -39,20 +39,20 @@ FABRIC = {
         "DEPLOY_DB_CLUSTER_SSH_KEY_PATH": "",
 
         # Yeti sandbox
-        "APPLICATION_HOSTS": ['127.0.0.1'], # List of hosts to deploy to
-        "DATABASE_HOSTS": ['127.0.0.1'],
-        "LIVE_HOSTNAME": "", # Host for public site.
+        "APPLICATION_HOSTS": ['yetibuilt.com'], # List of hosts to deploy to
+        "DATABASE_HOSTS": ['yetibuilt.com'],
+        "LIVE_HOSTNAME": "john.yetibuilt.com", # Host for public site.
         "DB_PASS": "jmcinnis", # Live database password
         "ADMIN_PASS": "admin", # Live admin user password
 
         # shared application settings
-        "SITENAME": "Default",
+        "SITENAME": "John's Portfolio Site",
         "VIRTUALENV_HOME": "/root/envs", # Absolute remote path for virtualenvs
         "PROJECT_NAME": "jmcinnis", # Unique identifier for project
         "REQUIREMENTS_PATH": "requirements.txt", # Path to pip requirements, relative to project
-        "GUNICORN_PORT": 8001, # Port gunicorn will listen on
+        "GUNICORN_PORT": 8239, # Port gunicorn will listen on
         "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
         "REPO_URL": "git@github.com:turbosaurus/jmcinnis.git", # Git or Mercurial remote repo URL for the project
-        "LINUX_DISTRO": "wheezy",
+        "LINUX_DISTRO": "squeeze",
     }
 }

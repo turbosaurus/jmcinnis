@@ -1,8 +1,8 @@
 from __future__ import unicode_literals
 
-SECRET_KEY = "%(secret_key)s"
-NEVERCACHE_KEY = "%(nevercache_key)s"
-ALLOWED_HOSTS = [%(domains_python)s]
+SECRET_KEY = "BLAH"
+NEVERCACHE_KEY = "BLAH"
+ALLOWED_HOSTS = ["john.yetibuilt.com"]
 
 DATABASES = {
     "default": {
@@ -35,9 +35,6 @@ CACHES = {
 }
 
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
-
-# Django 1.5+ requires a set of allowed hosts
-ALLOWED_HOSTS = [%(allowed_hosts)s]
 
 # Celery configuration (if django-celery is installed in requirements/requirements.txt)
 BROKER_URL = 'amqp://%(proj_name)s:%(admin_pass)s@127.0.0.1:5672/%(proj_name)s'
