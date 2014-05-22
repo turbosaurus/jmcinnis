@@ -1,7 +1,7 @@
 from django.contrib import admin
 from mezzanine.core.admin import StackedDynamicInlineAdmin
 from mezzanine.pages.admin import PageAdmin
-from jmcinnis.portfolio.models import ProjectPage, Category, ProjectImage
+from portfolio.models import ProjectPage, Category, ProjectImage
 
 
 class ProjectImageInline(StackedDynamicInlineAdmin):
