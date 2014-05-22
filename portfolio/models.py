@@ -10,7 +10,7 @@ class Category(models.Model):
         verbose_name_plural = "Categories"
 
     def __unicode__(self):
-        return u"{}".format(self.name)
+        return u"{0}".format(self.name)
 
 
 class ProjectPage(Page):

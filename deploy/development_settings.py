@@ -39,4 +39,4 @@ SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 # Celery configuration (if django-celery is installed in requirements/requirements.txt)
 BROKER_URL = 'amqp://%(proj_name)s:%(admin_pass)s@127.0.0.1:5672/%(proj_name)s'
 
-
+DEBUG = True
